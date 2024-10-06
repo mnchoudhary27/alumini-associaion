@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumini Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+    <div class="registration-container">
+        <h1>Alumni Registration</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="year">Year of Graduation:</label>
+                <input type="number" id="year" name="year" required min="1950" max="2099">
+            </div>
+            <div class="form-group">
+                <label for="branch">Branch:</label>
+                <select id="branch" name="branch" required>
+                    <option value="" disabled selected>Select your branch</option>
+                    <option value="CSE">Computer Science and Engineering</option>
+                    <option value="ECE">Electronics and Communication Engineering</option>
+                    <option value="EE">Electrical Engineering</option>
+                    <option value="ME">Mechanical Engineering</option>
+                    <option value="Ci.E">Civil Engineering</option>
+                    <option value="Ch.E">Chemical Engineering</option>
+                    <option value="PE">Petroleum Engineering</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+    <script src="registration.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="jobs.css">
+</head>
+<body>
+    <div>
+        <h1>Job Portal</h1>
+    </div>
+
+    <section id="home">
+        <h2>Welcome to the Alumni Job Portal</h2>
+        <p>Your gateway to career opportunities and professional growth.Explore job opportunities and help fellow alumni find their next role.</p>
+    </section>
+
+    <section id="jobs">
+        <h2>Job Listings</h2>
+        <div id="job-list"></div>
+    </section>
+
+    <section id="post-job">
+        <h2>Post a Job</h2>
+        <form id="job-form">
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" name="job-title" required>
+
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="description">Job Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <button type="submit">Post Job</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <script src="jobs.js"></script>
+</body>
+</html>

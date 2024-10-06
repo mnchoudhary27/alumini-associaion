@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(background.jpg);
+    background-size: cover;
+}
+
+header {
+    color: rgb(183 119 76);
+    padding: 10px 0;
+    text-align: center;
+}
+header h1 img{
+    width: 66px;
+    height: 60px;
+    margin: -9px;
+    color: rgb(247, 6, 6);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+nav ul {
+    list-style-type: square;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    list-style: disc inside;
+    margin-top: 35px;
+    text-align: left;
+    margin-left: 72px;
+    height: 30vh;
+    display: inline-block;
+}
+
+nav ul li {
+    display: flexbox;
+    justify-content: space-around;
+    margin-right: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+nav ul li :hover{
+    color: rgb(112, 132, 245);
+}
+nav ul li a {
+    color: rgb(19, 12, 12);
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: transparent;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column ;
+}
+
+ form label {
+    margin-bottom: 5px;
+} 
+
+form input,
+form select,
+form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #532121;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+#home{
+    background-color: transparent;
+    box-shadow: none;
+}
+/* Hero Section Styles */
+.hero {
+    background-color: transparent;
+    box-shadow: none;
+    color: #160e0e;
+    padding: 30px 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    /* border: 0.15rem solid rgb(184, 168, 133); */
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s forwards steps(67) ;
+}
+
+@keyframes typing {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #005a9c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #003f6f;
+}
+
+/* Main Content Styles */
+main {
+    padding: 10px 0;
+}
+
+main h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #005a9c;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+main .events ul {
+    list-style: disc inside;
+    margin-top: 20px;
+}
+
+main .events ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

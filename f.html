@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback & Survey Portal</title>
+    <link rel="stylesheet" href="f.css">
+</head>
+<body>
+    <header>
+        <h1>Government Engineering College Alumni Feedback & Survey Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#survey">Survey</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the Feedback & Survey Portal</h2>
+        <p>We value your feedback and appreciate your participation in our surveys to help improve our community.</p>
+    </section>
+
+    <section id="feedback">
+        <h2>Submit Your Feedback</h2>
+        <form id="feedback-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <section id="survey">
+        <h2>Survey</h2>
+        <form id="survey-form">
+            <p>How would you rate your experience as an alumni?</p>
+            <input type="radio" id="excellent" name="experience" value="Excellent">
+            <label for="excellent">Excellent</label><br>
+            <input type="radio" id="good" name="experience" value="Good">
+            <label for="good">Good</label><br>
+            <input type="radio" id="average" name="experience" value="Average">
+            <label for="average">Average</label><br>
+            <input type="radio" id="poor" name="experience" value="Poor">
+            <label for="poor">Poor</label><br>
+
+            <p>How likely are you to recommend our alumni association to others?</p>
+            <input type="radio" id="very-likely" name="recommend" value="Very Likely">
+            <label for="very-likely">Very Likely</label><br>
+            <input type="radio" id="likely" name="recommend" value="Likely">
+            <label for="likely">Likely</label><br>
+            <input type="radio" id="neutral" name="recommend" value="Neutral">
+            <label for="neutral">Neutral</label><br>
+            <input type="radio" id="unlikely" name="recommend" value="Unlikely">
+            <label for="unlikely">Unlikely</label><br>
+
+            <button type="submit">Submit Survey</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Government Engineering College Alumni Association</p>
+    </footer>
+
+    <script src="f.js"></script>
+</body>
+</html>

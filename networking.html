@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking hub</title>
+    <link rel="stylesheet" href="networking.css">
+</head>
+<body>
+    <section id="networking">
+        <h1>Networking Hub</h1>
+
+        <section id="home">
+            <h2>Welcome to the Alumni Networking Hub</h2>
+            <p>Stay connected with your fellow alumni, participate in events, and grow your professional network.</p>
+        </section>    
+    
+        <section id="members">
+            <h2>Alumni Members</h2>
+            <input type="text" id="search" placeholder="Search by name or batch..." onkeyup="filterAlumni()">
+            <div id="member-list"></div>
+        </section>
+    
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    
+    </section>
+    <script src="networking.js"></script>
+</body>
+</html>
